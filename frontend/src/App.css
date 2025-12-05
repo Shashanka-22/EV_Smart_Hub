@@ -1,0 +1,18 @@
+
+
+.station-card {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 8px;
+  margin: 1rem 0;
+  width: 100%;
+  max-width: 400px;
+}
+.prediction-result {
+  margin-top: 0.5rem;
+  background: #f5f5f5;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+

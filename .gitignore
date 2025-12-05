@@ -1,0 +1,33 @@
+﻿# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+venv/
+.env
+.venv/
+backend/.env
+backend/venv/
+backend/.venv/
+
+# Node / React
+node_modules/
+frontend/node_modules/
+frontend/build/
+frontend/.env
+frontend/.env.local
+
+# Uploaded & generated files
+uploads/
+generated_invoices/
+static/
+public/uploads/
+public/generated_invoices/
+
+# IDE / system
+.vscode/
+.DS_Store
+*.log
+
+# other
+.env*

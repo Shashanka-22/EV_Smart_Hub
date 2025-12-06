@@ -31,3 +31,5 @@ public/generated_invoices/
 
 # other
 .env*
+backend/venv
+backend/.env

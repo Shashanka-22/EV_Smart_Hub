@@ -1,6 +1,6 @@
 # 📄 backend/api/owner_analytics.py
 from flask import Blueprint, request, jsonify
-from backend.db_config import get_db_connection
+from ..db_config import get_db_connection
 from datetime import datetime, timedelta
 import jwt, os
 

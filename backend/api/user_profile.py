@@ -1,5 +1,5 @@
 from flask import Blueprint, request, jsonify, send_from_directory
-from backend.db_config import get_db_connection
+from ..db_config import get_db_connection
 import jwt, os
 
 user_profile_bp = Blueprint("user_profile", __name__)

@@ -1,6 +1,6 @@
 # 📄 backend/api/trip_planner.py
 from flask import Blueprint, request, jsonify
-from backend.db_config import get_db_connection
+from ..db_config import get_db_connection
 import requests
 import polyline
 import math

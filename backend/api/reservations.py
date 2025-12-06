@@ -1,5 +1,5 @@
 from flask import Blueprint, request, jsonify
-from backend.db_config import get_db_connection
+from ..db_config import get_db_connection
 from datetime import datetime, timedelta
 import pytz, jwt, requests, os, math
 from urllib.parse import quote
@@ -8,7 +8,7 @@ import random
 from decimal import Decimal
 
 # 🔌 SocketIO for real-time updates
-from backend.socket_manager import socketio
+from ..socket_manager import socketio
 
 # 🔹 Blueprint
 reservations_bp = Blueprint("reservations", __name__)

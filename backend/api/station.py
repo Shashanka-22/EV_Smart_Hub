@@ -1,7 +1,7 @@
 # 📄 backend/api/station.py
 
 from flask import Blueprint, request, jsonify
-from backend.db_config import get_db_connection
+from ..db_config import get_db_connection
 import jwt, os, math
 from datetime import datetime
 from flask_cors import CORS

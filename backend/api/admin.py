@@ -1,14 +1,14 @@
 # 📄 backend/api/admin.py
 
 from flask import Blueprint, request, jsonify
-from backend.db_config import get_db_connection
+from ..db_config import get_db_connection
 from flask_cors import CORS
 import os
 import jwt
 from functools import wraps
 
 # 📩 Email sender
-from backend.utils.email_service import (
+from ..utils.email_service import (
     send_station_approved_email,
     send_station_rejected_email,
 )

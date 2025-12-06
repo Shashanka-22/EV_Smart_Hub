@@ -1,6 +1,6 @@
 # backend/api/realtime.py
 from flask import Blueprint
-from backend.app import socketio
+from ..app import socketio
 from flask_socketio import Namespace, emit
 
 class RealtimeNamespace(Namespace):

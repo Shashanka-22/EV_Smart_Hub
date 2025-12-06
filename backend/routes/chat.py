@@ -1,6 +1,6 @@
 from flask import Blueprint, request, jsonify
 import google.generativeai as genai
-from backend.db_config import get_db_connection
+from ..db_config import get_db_connection
 import math
 import os
 

@@ -1,6 +1,6 @@
 # 📄 backend/api/emergency.py
 from flask import Blueprint, request, jsonify
-from backend.db_config import get_db_connection
+from ..db_config import get_db_connection
 import jwt, os
 
 emergency_bp = Blueprint("emergency", __name__)

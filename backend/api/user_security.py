@@ -1,5 +1,5 @@
 from flask import Blueprint, request, jsonify
-from backend.db_config import get_db_connection
+from ..db_config import get_db_connection
 import bcrypt, jwt, os
 
 user_security_bp = Blueprint("user_security", __name__)

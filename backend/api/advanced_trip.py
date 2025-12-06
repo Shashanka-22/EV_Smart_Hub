@@ -1,5 +1,5 @@
 from flask import Blueprint, request, jsonify
-from backend.db_config import get_db_connection
+from ..db_config import get_db_connection
 import math
 
 advanced_trip_bp = Blueprint("advanced_trip", __name__)

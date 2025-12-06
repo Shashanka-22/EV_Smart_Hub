@@ -1,8 +1,8 @@
 # 📄 backend/api/owner.py
 
 from flask import Blueprint, request, jsonify
-from backend.db_config import get_db_connection
-from backend.socketio_instance import socketio
+from ..db_config import get_db_connection
+from ..socketio_instance import socketio
 from datetime import datetime, timedelta
 from threading import Thread
 import time

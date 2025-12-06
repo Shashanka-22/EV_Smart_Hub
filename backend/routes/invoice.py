@@ -1,7 +1,7 @@
 from flask import Blueprint, send_file, jsonify
-from backend.utils.invoice_generator import generate_invoice_pdf
-from backend.utils.email_service import send_invoice_email
-from backend.db_config import get_db_connection as get_db
+from ..utils.invoice_generator import generate_invoice_pdf
+from ..utils.email_service import send_invoice_email
+from ..db_config import get_db_connection as get_db
 import io
 
 invoice = Blueprint("invoice", __name__)

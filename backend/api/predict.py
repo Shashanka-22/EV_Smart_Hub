@@ -4,7 +4,7 @@ import numpy as np
 import joblib
 from keras.models import load_model
 from datetime import datetime, timedelta
-from backend.db_config import get_db_connection
+from ..db_config import get_db_connection
 import requests, os, math, traceback
 
 # ---------------- Blueprint ----------------

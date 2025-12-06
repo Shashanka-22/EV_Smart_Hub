@@ -8,7 +8,7 @@ import os
 # ------------------------------------------------------
 # 🔌 IMPORT GLOBAL SOCKET.IO INSTANCE (NO CIRCULAR IMPORT)
 # ------------------------------------------------------
-from backend.socketio_instance import socketio   # ⭐ FIXED
+from .socketio_instance import socketio   # ⭐ FIXED
 
 # Load environment variables
 load_dotenv()
@@ -49,23 +49,23 @@ def create_app():
     # ------------------------------------------------------
     # 🔗 REGISTER ALL BLUEPRINTS (AFTER APP CREATED)
     # ------------------------------------------------------
-    from backend.api.auth import auth_bp
-    from backend.api.reservations import reservations_bp
-    from backend.api.predict import predict_bp
-    from backend.api.station import station_bp
-    from backend.api.battery import battery_bp
-    from backend.api.owner import owner_bp
-    from backend.api.trip_planner import trip_bp
-    from backend.api.admin import admin_bp
-    from backend.api.advanced_trip import advanced_trip_bp
-    from backend.api.user_profile import user_profile_bp
-    from backend.api.user_security import user_security_bp
-    from backend.api.reviews import reviews_bp
-    from backend.api.emergency import emergency_bp
+    from .api.auth import auth_bp
+    from .api.reservations import reservations_bp
+    from .api.predict import predict_bp
+    from .api.station import station_bp
+    from .api.battery import battery_bp
+    from .api.owner import owner_bp
+    from .api.trip_planner import trip_bp
+    from .api.admin import admin_bp
+    from .api.advanced_trip import advanced_trip_bp
+    from .api.user_profile import user_profile_bp
+    from .api.user_security import user_security_bp
+    from .api.reviews import reviews_bp
+    from .api.emergency import emergency_bp
 
-    from backend.routes.invoice import invoice
-    from backend.routes.chat import chat
-    from backend.api.owner_analytics import owner_analytics_bp
+    from .routes.invoice import invoice
+    from .routes.chat import chat
+    from .api.owner_analytics import owner_analytics_bp
 
     app.register_blueprint(auth_bp, url_prefix="/api/auth")
     app.register_blueprint(reservations_bp, url_prefix="/api/reservations")
